@@ -18,7 +18,15 @@ from django.contrib import admin
 from django.urls import path, include
 from Apps.home import views
 from .views import HomeView
+from .views import EstudiantesView
+from .views import AdminView
+from .views import AcercaView
+
+app_name = 'home'
 
 urlpatterns = [
     path('', HomeView.as_view(), name='homeapp'),
+    path('estudiantes/', EstudiantesView.as_view(), name='estudiantesapp'),
+    path('administradores/', AdminView.as_view(), name='adminapp'),
+    path('acerca/', AcercaView.as_view(), name='acercasapp'),
 ]

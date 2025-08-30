@@ -13,10 +13,10 @@
   </div>
 
   <div class="mb-3">
-    <a href="index.html">Home |</a>
-    <a href="estudiantes.html"> Estudiantes |</a>
-    <a href="admin.html"> Administradores |</a>
-    <a href="acerca.html"> Acerca De</a>
+    <a href="{% url 'home:homeapp' %}">Home |</a>
+    <a href="{% url 'home:estudiantesapp' %}"> Estudiantes |</a>
+    <a href="{% url 'home:adminapp' %}"> Administradores |</a>
+    <a href="{% url 'home:acercasapp' %}"> Acerca De</a>
   </div>
 
   <table class="table table-striped table-bordered table-hover mt-3">
